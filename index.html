@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Official Privacy Policy for the Sentinel Discord Bot" />
+  <title>Sentinel — Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="content-wrapper">
+    <article id="rules-content" class="rules-panel">
+      <p class="loading-msg">Loading Privacy Policy&hellip;</p>
+    </article>
+    <p id="last-updated" class="last-updated"></p>
+  </main>
+
+  <footer class="site-footer">
+    <a href="https://itsmias.xyz/" target="_blank">Made by ItsMias</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    fetch('./policy.md')
+      .then(function(r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.text();
+      })
+      .then(function(md) {
+        document.getElementById('rules-content').innerHTML = marked.parse(md);
+      })
+      .catch(function() {});
+
+    fetch('https://api.github.com/repos/BeyondTheHorizonProductions/Privacy-Policy/commits?per_page=1')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        var date = new Date(data[0].commit.committer.date);
+        var formatted = date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+        document.getElementById('last-updated').textContent = 'Last updated ' + formatted;
+      })
+      .catch(function() {});
+  </script>
+
+</body>
+</html>

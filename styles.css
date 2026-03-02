@@ -1,0 +1,279 @@
+/* ============================================================
+   Beyond The Horizon Discord Rules — styles.css
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* --- Design Tokens --- */
+:root {
+  --bg:              #111115;
+  --bg-panel:        #17171d;
+  --bg-raised:       #1e1e26;
+
+  --border:          rgba(255, 255, 255, 0.07);
+  --border-mid:      rgba(255, 255, 255, 0.11);
+
+  --text:            #dcddde;
+  --text-muted:      #8e9297;
+  --text-faint:      #4f545c;
+  --text-heading:    #f2f3f5;
+
+  --link:            #7398c7;
+
+  --content-max-width: 800px;
+  --radius: 10px;
+}
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Content Wrapper --- */
+.content-wrapper {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+/* --- Rules Panel --- */
+.rules-panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+}
+
+.loading-msg {
+  color: var(--text-faint);
+  text-align: center;
+  padding: 2.5rem 0;
+  font-size: 0.9rem;
+}
+
+.error-msg {
+  background: rgba(237, 66, 69, 0.07);
+  border: 1px solid rgba(237, 66, 69, 0.25);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  color: #e8a0a2;
+  line-height: 1.65;
+}
+
+.error-msg strong {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #f08080;
+}
+
+/* --- Markdown Typography --- */
+
+.rules-panel h1 {
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-heading);
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-mid);
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.rules-panel h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-heading);
+  margin: 2rem 0 0.6rem;
+  line-height: 1.4;
+}
+
+.rules-panel h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.rules-panel p {
+  margin-bottom: 1rem;
+}
+
+.rules-panel hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+.rules-panel ul,
+.rules-panel ol {
+  margin: 0.4rem 0 1rem 1.4rem;
+}
+
+.rules-panel li {
+  margin-bottom: 0.35rem;
+}
+
+.rules-panel blockquote {
+  border-left: 2px solid var(--border-mid);
+  margin: 1.25rem 0;
+  padding: 0.6rem 1.1rem;
+}
+
+.rules-panel blockquote p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.rules-panel code {
+  background: var(--bg-raised);
+  border: 1px solid var(--border-mid);
+  border-radius: 4px;
+  padding: 0.1em 0.4em;
+  font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace;
+  font-size: 0.85em;
+  color: var(--text-muted);
+}
+
+.rules-panel pre {
+  background: #0c0c10;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.rules-panel pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.9em;
+  color: var(--text);
+}
+
+.rules-panel a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-color: rgba(115, 152, 199, 0.35);
+  text-underline-offset: 3px;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+
+.rules-panel a:hover {
+  color: #96b5d8;
+  text-decoration-color: rgba(150, 181, 216, 0.45);
+}
+
+.rules-panel strong {
+  color: var(--text-heading);
+  font-weight: 600;
+}
+
+.rules-panel em {
+  color: var(--text-muted);
+}
+
+.rules-panel table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  font-size: 0.93rem;
+}
+
+.rules-panel thead tr {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.rules-panel th {
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: left;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--border-mid);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.rules-panel td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.rules-panel tr:last-child td {
+  border-bottom: none;
+}
+
+.rules-panel tbody tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* --- Last Updated --- */
+.last-updated {
+  text-align: center;
+  color: var(--text-faint);
+  font-size: 0.78rem;
+  margin-top: 1.25rem;
+}
+
+/* --- Footer --- */
+.site-footer {
+  text-align: center;
+  padding: 1.75rem 1.5rem;
+  color: var(--text-faint);
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  border-top: 1px solid var(--border);
+}
+
+.site-footer a {
+  color: var(--text-faint);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.site-footer a:hover {
+  color: var(--text-muted);
+}
+
+/* --- Responsive: Tablet --- */
+@media (max-width: 768px) {
+  .rules-panel { padding: 1.75rem 1.5rem; }
+  .rules-panel h1 { font-size: 1.4rem; }
+  .rules-panel h2 { font-size: 1rem; }
+  .banner-subtitle { letter-spacing: 0.12em; }
+}
+
+/* --- Responsive: Mobile --- */
+@media (max-width: 480px) {
+  .content-wrapper { padding: 1.5rem 0.75rem 3rem; }
+  .rules-panel { padding: 1.25rem 1rem; border-radius: 8px; }
+  .rules-panel h1 { font-size: 1.25rem; }
+  .banner-subtitle { letter-spacing: 0.08em; }
+
+  .rules-panel table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
