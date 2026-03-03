@@ -41,7 +41,7 @@ This data will be deleted by **ItsMias** once your bug has been dealt with.
 
 ## 4. Why We Collect This Data
 - **Leveling data**, to run the leveling system.
-- **Minecraft linking data**, to associate your Discord and Minecraft for role synchronization
+- **Minecraft linking data**, to associate your Discord and Minecraft for role synchronization.
 - **Error logs**, to identify and fix bugs in the Bot.
 
 ## 5. How Long We Keep Your Data
