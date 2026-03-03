@@ -23,7 +23,7 @@ If you choose to link your Minecraft account to your Discord account, the follow
 - **Minecraft UUID**
 - **Minecraft Username** 
 
-When a users joins the `link.itsmias.xyz` Minecraft server, a temporary 6-digit code is generated and stored alongside your Minecraft UUID and username. Data is deleted after 5 minutes if the link is unsuccessful
+When a users joins the `link.itsmias.xyz` Minecraft server, a temporary 6-digit code is generated and stored alongside your Minecraft UUID and username. Data is deleted after 5 minutes if the link is unsuccessful.
 
 Your Minecraft username may be automatically updated in our records if it has changed since you last linked. To verify usernames, the Bot queries the **Mojang Session Server API** using your Minecraft UUID. No additional data beyond your username is retrieved from this API.
 
@@ -32,7 +32,7 @@ If an error occurs while you are using the Bot, the following may be captured:
 - **Discord Guild ID** 
 - **Interaction ID** 
 - **Error details** 
-This data will be deleted by **ItsMias** once your bug has been dealt with 
+This data will be deleted by **ItsMias** once your bug has been dealt with.
 
 ## 3. What We Do Not Collect
 - **Message content**
@@ -42,15 +42,15 @@ This data will be deleted by **ItsMias** once your bug has been dealt with
 ## 4. Why We Collect This Data
 - **Leveling data**, to run the leveling system.
 - **Minecraft linking data**, to associate your Discord and Minecraft for role synchronization
-- **Error logs**, to identify and fix bugs in the Bot
+- **Error logs**, to identify and fix bugs in the Bot.
 
 ## 5. How Long We Keep Your Data
 All data that is stored, is kept indefinitely unless otherwise stated.
   
 
 ## 6. Who Has Access to Your Data
-- **The Horizon, Aalchemy & ItsMias** - have access to the data for maintenance and administration purposes
-- **Other users** - can view your data through commands  like `/rank` & `/leaderboard`
+- **The Horizon, Aalchemy & ItsMias** - have access to the data for maintenance and administration purposes.
+- **Other users** - can view your data through commands  like `/rank` & `/leaderboard`.
 - **Third parties** - your data is **never sold or shared** with any third party, unless stated otherwise.
 
 ## 7. Third-Party Services
