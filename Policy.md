@@ -71,7 +71,7 @@ While we take reasonable steps to protect your data, we cannot guarantee absolut
 ## 11. Contact
 If you have questions about this policy, wish to exercise your data rights, or want to request deletion of your data, please contact us:
 - **Discord:** Open a ticket in the support channel.
-- **Email:** Send an email to `sentinel@ItsMias.xyz`
+- **Email:** Send an email to `sentinel@beyondthehorizon.xyz`
 
 ## 12. Changes to This Policy
 We may update this policy at any time. The "Last updated" at the bottom of this website shows when the latest changes were made. Continued use of the server after changes are made constitutes acceptance of the updated policy.
