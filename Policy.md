@@ -23,7 +23,7 @@ If you choose to link your Minecraft account to your Discord account, the follow
 - **Minecraft UUID**
 - **Minecraft Username** 
 
-When a users joins the `link.itsmias.xyz` Minecraft server, a temporary 6-digit code is generated and stored alongside your Minecraft UUID and username. Data is deleted after 5 minutes if the link is unsuccessful.
+When a users joins the `link.itsmias.com` Minecraft server, a temporary 6-digit code is generated and stored alongside your Minecraft UUID and username. Data is deleted after 5 minutes if the link is unsuccessful.
 
 Your Minecraft username may be automatically updated in our records if it has changed since you last linked. To verify usernames, the Bot queries the **Mojang Session Server API** using your Minecraft UUID. No additional data beyond your username is retrieved from this API.
 
