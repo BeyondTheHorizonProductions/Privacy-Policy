@@ -1,1 +1,1 @@
-Github repository for the privacy policy of Sentinel: [sentinel.itsmias.xyz](https://sentinel.itsmias.xyz/)
+Github repository for the privacy policy of Sentinel: [sentinel.beyondthehorizon.xyz](https://sentinel.beyondthehorizon.xyz/)
