@@ -236,24 +236,18 @@ body {
   margin-top: 1.25rem;
 }
 
-/* --- Footer --- */
+/* --- Footer: the ItsMias signature (itsmias-sig.css) in this site's greys --- */
 .site-footer {
-  text-align: center;
-  padding: 1.75rem 1.5rem;
-  color: var(--text-faint);
-  font-size: 0.8rem;
-  letter-spacing: 0.03em;
+  display: flex;
+  justify-content: center;
+  padding: 2.75rem 1.5rem 3rem;
   border-top: 1px solid var(--border);
 }
 
-.site-footer a {
-  color: var(--text-faint);
-  text-decoration: none;
-  transition: color 0.15s;
-}
-
-.site-footer a:hover {
-  color: var(--text-muted);
+.site-footer .mias-sig {
+  --sig-ink: var(--text-heading);
+  --sig-muted: var(--text-muted);
+  --sig-size: 1.6rem;
 }
 
 /* --- Responsive: Tablet --- */
