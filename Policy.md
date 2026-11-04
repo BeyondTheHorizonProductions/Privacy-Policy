@@ -68,7 +68,6 @@ All data that is stored, is kept indefinitely unless otherwise stated.
 The Bot interacts with the following external services:
 - **Discord** - the platform the Bot operates on. Discord's own [Privacy Policy](https://discord.com/privacy) applies to your use of Discord. The Leaderboards load avatars from Discord, so Discord receives the IP address of anyone viewing them.
 - **Mojang Session Server** (`sessionserver.mojang.com`) - triggered to look up Minecraft usernames by UUID. 
-- **Google Fonts** (`fonts.googleapis.com`, `fonts.gstatic.com`) - the Leaderboards load their fonts from Google, so Google receives the IP address of anyone viewing them. Google's [Privacy Policy](https://policies.google.com/privacy) applies.
 
 ## 8. Your Rights (GDPR)
 If you are located in the European Economic Area (EEA) or United Kingdom, you have certain rights under the General Data Protection Regulation (GDPR). To exercise any of these rights, please contact us using the details in Section 11.
