@@ -47,7 +47,7 @@ body {
 .content-wrapper {
   max-width: var(--content-max-width);
   margin: 0 auto;
-  padding: 2.5rem 1.5rem 4rem;
+  padding: 2.5rem 1.5rem 0;
 }
 
 /* --- Rules Panel --- */
@@ -236,18 +236,22 @@ body {
   margin-top: 1.25rem;
 }
 
-/* --- Footer: the ItsMias signature (itsmias-sig.css) in this site's greys --- */
+/* --- Footer: follows straight on from the last-updated line --- */
 .site-footer {
-  display: flex;
-  justify-content: center;
-  padding: 2.75rem 1.5rem 3rem;
-  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 0.25rem 1.5rem 2.5rem;
+  color: var(--text-muted);
+  font-size: 0.78rem;
 }
 
-.site-footer .mias-sig {
-  --sig-ink: var(--text-heading);
-  --sig-muted: var(--text-muted);
-  --sig-size: 1.6rem;
+.site-footer a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.site-footer a:hover {
+  color: var(--text);
 }
 
 /* --- Responsive: Tablet --- */
@@ -260,7 +264,8 @@ body {
 
 /* --- Responsive: Mobile --- */
 @media (max-width: 480px) {
-  .content-wrapper { padding: 1.5rem 0.75rem 3rem; }
+  .content-wrapper { padding: 1.5rem 0.75rem 0; }
+  .site-footer { padding: 0.25rem 0.75rem 1.5rem; }
   .rules-panel { padding: 1.25rem 1rem; border-radius: 8px; }
   .rules-panel h1 { font-size: 1.25rem; }
   .banner-subtitle { letter-spacing: 0.08em; }
