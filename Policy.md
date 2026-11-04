@@ -1,13 +1,13 @@
 # Privacy Policy
 ## 1. Introduction
 
-This Privacy Policy explains what data the Sentinel Discord bot ("the Bot") collects, why it is collected, how it is stored, and your rights regarding that data.
+This Privacy Policy explains what data the Sentinel Discord bot ("the Bot") and its public leaderboards website ("the Leaderboards") collect, why it is collected, how it is stored, and your rights regarding that data.
 
 The Bot is operated by **ItsMias** and is active in the **Beyond The Horizon Discord server**. By being a member of the discord server or by directly interacting with the Bot, your data may be processed as described below.
 
 ## 2. Data We Collect
 
-When you send a message in the server, the following is recorded automatically:
+When you send a message or use a voice channel in the server, the following is recorded automatically:
 - **Discord User ID**
 - **Discord Guild ID** 
 - **Message count** 
@@ -15,8 +15,15 @@ When you send a message in the server, the following is recorded automatically:
 - **Level** 
 - **Rank** (Leaderboard position)
 - **Last reward role** 
+- **XP earned each day** (from messages, voice and XP drops)
+- **Time spent in voice channels**
+- **Activity streaks** (current and best)
 
 **Message content is never stored.** Only the fact that a message was sent is counted.
+
+For the Leaderboards, your **name in the server** and a **link to your avatar** are fetched from Discord about every 30 minutes. They are removed at the next update if you leave the server or use `/no xp`.
+
+When someone views the Leaderboards, the web server logs their **IP address**, the page they opened and their browser details. These logs are deleted after about two weeks.
 
 If you choose to link your Minecraft account to your Discord account, the following is stored permanently:
 - **Discord User ID**
@@ -36,11 +43,13 @@ This data will be deleted by **ItsMias** once your bug has been dealt with.
 
 ## 3. What We Do Not Collect
 - **Message content**
-- **IP addresses** 
+- **IP addresses**, except in the Leaderboards web server logs described in Section 2
 - **Command arguments**
 
 ## 4. Why We Collect This Data
-- **Leveling data**, to run the leveling system.
+- **Leveling data**, to run the leveling system and the Leaderboards.
+- **Names and avatars**, to show who is who on the Leaderboards.
+- **Web server logs**, to find problems with the Leaderboards.
 - **Minecraft linking data**, to associate your Discord and Minecraft for role synchronization.
 - **Error logs**, to identify and fix bugs in the Bot.
 
@@ -50,14 +59,16 @@ All data that is stored, is kept indefinitely unless otherwise stated.
 
 ## 6. Who Has Access to Your Data
 - **The Horizon, Aalchemy & ItsMias** - have access to the data for maintenance and administration purposes.
-- **Other users** - can view your data through commands  like `/rank` & `/leaderboard`.
+- **Other users** - can view your data through commands like `/rank`, `/leaderboard` & `/xpchart`.
+- **Anyone on the internet** - can view your name, avatar, level, XP (including XP per day), message count, voice time, streaks and XP drops on the [Leaderboards](https://leaderboards.itsmias.com/1051717586313826314), without a Discord account. You are not listed if you have left the server or use `/no xp`. Linked Minecraft accounts are not shown.
 - **Third parties** - your data is **never sold or shared** with any third party, unless stated otherwise.
 
 ## 7. Third-Party Services
 
 The Bot interacts with the following external services:
-- **Discord** - the platform the Bot operates on. Discord's own [Privacy Policy](https://discord.com/privacy) applies to your use of Discord.
+- **Discord** - the platform the Bot operates on. Discord's own [Privacy Policy](https://discord.com/privacy) applies to your use of Discord. The Leaderboards load avatars from Discord, so Discord receives the IP address of anyone viewing them.
 - **Mojang Session Server** (`sessionserver.mojang.com`) - triggered to look up Minecraft usernames by UUID. 
+- **Google Fonts** (`fonts.googleapis.com`, `fonts.gstatic.com`) - the Leaderboards load their fonts from Google, so Google receives the IP address of anyone viewing them. Google's [Privacy Policy](https://policies.google.com/privacy) applies.
 
 ## 8. Your Rights (GDPR)
 If you are located in the European Economic Area (EEA) or United Kingdom, you have certain rights under the General Data Protection Regulation (GDPR). To exercise any of these rights, please contact us using the details in Section 11.
