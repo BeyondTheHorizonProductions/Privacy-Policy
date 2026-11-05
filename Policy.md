@@ -58,7 +58,8 @@ All data that is stored, is kept indefinitely unless otherwise stated.
   
 
 ## 6. Who Has Access to Your Data
-- **The Horizon, Aalchemy & ItsMias** - have access to the data for maintenance and administration purposes.
+- **ItsMias** - is the only person who can access the database and the server it runs on, for maintenance and administration. Sentinel is hosted on a private server, which The Horizon and Aalchemy no longer have access to.
+- **Server administrators** - can use Bot commands to look up which Minecraft account is linked to which Discord account, read error details, and change or delete stored data. Account links are posted in a private staff channel. Admins of the Staff and Contestant Portals can see the Minecraft accounts linked by staff and contestants.
 - **Other users** - can view your data through commands like `/rank`, `/leaderboard` & `/xpchart`.
 - **Anyone on the internet** - can view your name, avatar, level, XP (including XP per day), message count, voice time, streaks and XP drops on the [Leaderboards](https://leaderboards.itsmias.com/1051717586313826314), without a Discord account. You are not listed if you have left the server or use `/no xp`. Linked Minecraft accounts are not shown.
 - **Third parties** - your data is **never sold or shared** with any third party, unless stated otherwise.
@@ -73,7 +74,7 @@ The Bot interacts with the following external services:
 If you are located in the European Economic Area (EEA) or United Kingdom, you have certain rights under the General Data Protection Regulation (GDPR). To exercise any of these rights, please contact us using the details in Section 11.
 
 ## 9. Data Security
-Your data is stored in a local SQLite database on our server infrastructure. Access is restricted to the individuals mentioned in section 6.
+Your data is stored in a local SQLite database on a private server. Only ItsMias can access the server and the database directly.
 
 ## 10. Limitation of Liability  
 While we take reasonable steps to protect your data, we cannot guarantee absolute security. In the event of a data breach or unauthorised access, we accept no liability for any resulting damages, losses, or harm. By using the Beyond The Horizon Discord server and interacting with the Bot, you acknowledge and accept this risk. 
