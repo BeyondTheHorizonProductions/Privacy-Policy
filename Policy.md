@@ -50,7 +50,7 @@ This data will be deleted by **ItsMias** once your bug has been dealt with.
 - **Leveling data**, to run the leveling system and the Leaderboards.
 - **Names and avatars**, to show who is who on the Leaderboards.
 - **Web server logs**, to find problems with the Leaderboards.
-- **Minecraft linking data**, to associate your Discord and Minecraft for role synchronization.
+- **Minecraft linking data**, to associate your Discord and Minecraft for role synchronization, and so the Production site can open a recording in a production team member's own game. To confirm which account a game is using, the site checks with Mojang's Session Server.
 - **Error logs**, to identify and fix bugs in the Bot.
 
 ## 5. How Long We Keep Your Data
