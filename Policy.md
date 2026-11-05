@@ -59,7 +59,9 @@ All data that is stored, is kept indefinitely unless otherwise stated.
 
 ## 6. Who Has Access to Your Data
 - **ItsMias** - is the only person who can access the database and the server it runs on, for maintenance and administration. Sentinel is hosted on a private server, which The Horizon and Aalchemy no longer have access to.
-- **Server administrators** - can use Bot commands to look up which Minecraft account is linked to which Discord account, read error details, and change or delete stored data. Account links are posted in a private staff channel. Admins of the Staff and Contestant Portals can see the Minecraft accounts linked by staff and contestants.
+- **Bot administrators (ItsMias and The Horizon)** - can use Bot commands to look up which Minecraft account is linked to which Discord account, read error details, and change or delete stored data.
+- **Members with certain roles** - can look up and remove linked accounts with Bot commands, or see account links posted in a private staff channel.
+- **Staff and Contestant Portal admins** - can see the Minecraft accounts linked by staff and contestants.
 - **Other users** - can view your data through commands like `/rank`, `/leaderboard` & `/xpchart`.
 - **Anyone on the internet** - can view your name, avatar, level, XP (including XP per day), message count, voice time, streaks and XP drops on the [Leaderboards](https://leaderboards.itsmias.com/1051717586313826314), without a Discord account. You are not listed if you have left the server or use `/no xp`. Linked Minecraft accounts are not shown.
 - **Third parties** - your data is **never sold or shared** with any third party, unless stated otherwise.
